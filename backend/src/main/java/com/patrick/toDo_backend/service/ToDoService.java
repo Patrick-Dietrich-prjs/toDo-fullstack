@@ -19,13 +19,13 @@ public class ToDoService {
         return toDoRepository.findAll();
     }
 
+    public Optional<ToDo> findById(Integer id){
+        return toDoRepository.findById(id);
+    }
+
     public ToDo save(ToDo toDo){
         toDo.setCriado_em(LocalDate.now());
         return toDoRepository.save(toDo);
-    }
-
-    public Optional<ToDo> findById(Integer id){
-        return toDoRepository.findById(id);
     }
 
     public boolean deleteById(Integer id){
