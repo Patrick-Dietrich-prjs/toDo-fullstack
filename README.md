@@ -102,3 +102,5 @@ toDo-fullstack\frontend\src
 
 
 ## Status do projeto
+
+Em andamento - fase inicial
